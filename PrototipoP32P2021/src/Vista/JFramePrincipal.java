@@ -30,7 +30,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDesktopPane1 = new javax.swing.JDesktopPane();
+        JDesktopMDI = new javax.swing.JDesktopPane();
         JMenuBarContenedor = new javax.swing.JMenuBar();
         JMenuInicio = new javax.swing.JMenu();
         JMenuInicioAccion = new javax.swing.JMenu();
@@ -53,16 +53,16 @@ public class JFramePrincipal extends javax.swing.JFrame {
         setTitle("Diego Vásquez [9959 - 19 - 19543]");
         setResizable(false);
 
-        jDesktopPane1.setBackground(new java.awt.Color(0, 80, 100));
+        JDesktopMDI.setBackground(new java.awt.Color(10, 40, 50));
 
-        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
-        jDesktopPane1.setLayout(jDesktopPane1Layout);
-        jDesktopPane1Layout.setHorizontalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout JDesktopMDILayout = new javax.swing.GroupLayout(JDesktopMDI);
+        JDesktopMDI.setLayout(JDesktopMDILayout);
+        JDesktopMDILayout.setHorizontalGroup(
+            JDesktopMDILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1200, Short.MAX_VALUE)
         );
-        jDesktopPane1Layout.setVerticalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        JDesktopMDILayout.setVerticalGroup(
+            JDesktopMDILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 646, Short.MAX_VALUE)
         );
 
@@ -82,9 +82,19 @@ public class JFramePrincipal extends javax.swing.JFrame {
         JMenuCatPrin.setText("Principales");
 
         JMenuMantCliente.setText("Cliente");
+        JMenuMantCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMenuMantClienteActionPerformed(evt);
+            }
+        });
         JMenuCatPrin.add(JMenuMantCliente);
 
         JMenuMantTienda.setText("Tienda");
+        JMenuMantTienda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMenuMantTiendaActionPerformed(evt);
+            }
+        });
         JMenuCatPrin.add(JMenuMantTienda);
 
         JMenuMantTipoPelicula.setText("Tipo Película");
@@ -125,16 +135,28 @@ public class JFramePrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1)
+            .addComponent(JDesktopMDI)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1)
+            .addComponent(JDesktopMDI)
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void JMenuMantClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuMantClienteActionPerformed
+        JFrmMantCliente jfrmMantCliente = new JFrmMantCliente();
+        JDesktopMDI.add(jfrmMantCliente);
+        jfrmMantCliente.setVisible(true);
+    }//GEN-LAST:event_JMenuMantClienteActionPerformed
+
+    private void JMenuMantTiendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuMantTiendaActionPerformed
+        JFrmMantTienda jfrmMantTienda = new JFrmMantTienda();
+        JDesktopMDI.add(jfrmMantTienda);
+        jfrmMantTienda.setVisible(true);
+    }//GEN-LAST:event_JMenuMantTiendaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -154,6 +176,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDesktopPane JDesktopMDI;
     private javax.swing.JMenu JMenuAyuda;
     private javax.swing.JMenuBar JMenuBarContenedor;
     private javax.swing.JMenu JMenuCatPrin;
@@ -171,6 +194,5 @@ public class JFramePrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem JMenuMantTipoPelicula;
     private javax.swing.JMenu JMenuProceso;
     private javax.swing.JMenu JMenuSeguridad;
-    private javax.swing.JDesktopPane jDesktopPane1;
     // End of variables declaration//GEN-END:variables
 }
