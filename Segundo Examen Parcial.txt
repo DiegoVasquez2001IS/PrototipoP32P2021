@@ -1,0 +1,82 @@
+Instrucciones:
+La solución del siguiente caso practico deberá subirse a la plataforma
+Blackboard en la actividad: Segundo Examen Parcial (Serie III) -Caso
+práctico-.
+Entregables:
+1. Archivo ZIP con el proyecto de software.
+2. Link del repositorio de Github.
+3. Link del video de la ejecución del software.
+Caso Práctico
+Una corporación comercial, le contrata a usted para poder liderar el proyecto
+de modernización de tecnología en la corporación. Para ello le brinda el
+enunciado del problema, que debe tomarse como base para concluir el
+desarrollo del software.
+Aspectos técnicos:
+a) Modelo vista controlador para desarrollar el software.
+b) Se debe desarrollar un prototipo de software de característica seleccionadas (se detallarán
+en el problema)
+c) Diagrama entidad relación.
+d) Para todo el desarrollo del prototipo deberá utilizar Git y Github para versionar el software.
+a. Nombre del proyecto: PrototipoP32P2021 (para git y github).
+b. Deberá crear como mínimo las siguientes ramas del proyecto:
+i. RamaContenedor
+ii. RamaMantenimientos
+iii. RamaProcesos
+iv. Rama Seguridad
+v. Master o Main
+c. Deberá agregar su número de carnet al nombre de cada rama, por ejemplo:
+RamaContenedor0901170301.
+d. Deberá subir al Github tanto el Master del proyecto como las ramas creadas.
+e) Deberá diseñar la base de datos e incorporar sus scripts (LDD y LMD) al proyecto de Git
+y Github.
+f) Deberá grabar un video de la ejecución del programa, en donde debe aparecer el IDE de
+desarrollo (mostrar la estructura MVC), su carnet y su nombre en el título del contenedor
+MDI.
+
+Enunciado del problema:
+La corporación FilmMagic, una cadena de renta de vídeos fundada por tres personas con
+experiencia en el negocio de la renta de vídeos. Le contrata a usted para poder liderar el proyecto
+de modernización de tecnología en las tiendas. Para ello le brinda un resumen de actividades del
+negocio obtenido de entrevistas realizadas a los propietarios y empleados de FilmMagic.
+El plan es contar con una serie de tiendas distribuidas estratégicamente alrededor de un área
+metropolitana. La compañía también ha adoptado la singular política de otorgar rentas gratuitas
+de DVDs o juegos a los clientes que renten cantidades considerables de vídeos, en un intento por
+conseguir una buena participación de mercado. Según uno de los propietarios de la compañía: "Si
+las aerolíneas tienen programas de viajeros frecuentes, nuestras tiendas de vídeos pueden contar
+con un programa de rentas recurrentes". En consecuencia, un programa de bonos mensuales
+para los clientes será parte del sistema.
+Requerimientos:
+1. Los clientes pueden solicitar una tarjeta para rentar videos. Deben llenar un formulario de
+datos personales y ofrecer un medio para verificar su identidad. – Mantenimiento
+2. Debe llevarse el registro de los videos y dvd tanto por autor, tipo de película (terror, drama,
+etc) y existencia.
+3. Para rentar videos, los clientes deben darle al empleado su tarjeta y los DVD o videojuegos.
+El empleado calcula el total de la renta. Se da un recibo a los clientes, con la fecha de
+vencimiento de la renta. Se crea un registro para cada artículo rentado.
+4. Los clientes devuelven DVD o videojuegos. Si el artículo es devuelto después de la fecha de
+vencimiento, en el registro se anota el importe del cargo por la entrega atrasada.
+5. Si el cliente tiene una entrega vencida, el pago correspondiente se le exige la próxima vez
+que rente un artículo.
+6. La compañía diseño varias políticas para conseguir una ventaja competitiva en el mercado.
+Los registros de renta de los clientes se revisan una vez al mes para determinar si las rentas
+que realizaron exceden el nivel del bono establecido en Q 50.00. A los clientes con derecho
+a bono se les envía una carta en donde se les agradece haber excedido la cantidad
+establecida, junto con varios cupones de rentas gratuitas.
+7. Los registros de renta de los clientes se examinan una vez al año para determinar si las
+rentas que realizaron los clientes exceden el nivel del bono anual establecido en Q 250.00. Al cliente se le envía una carta, cupones de renta gratuita y un certificado para un video
+gratis.
+8. Se deben generar reportes tanto de las rentas diarias, bonos otorgados (tanto diarios como
+anuales)
+Características seleccionadas del prototipo.
+1. Autenticación de usuarios.
+2. Menú de seguridad completo.
+3. Contenedor MDI, con los menús (Inicio, catálogos o maestros, procesos, informes, seguridad y
+ayuda).
+4. Los mantenimientos del sistema (CRUD), agregar ayuda a un mantenimiento.
+5. El proceso transaccional siguiente:
+a. La compañía diseño varias políticas para conseguir una ventaja competitiva en el
+mercado. Los registros de renta de los clientes se revisan una vez al mes para
+determinar si las rentas que realizaron exceden el nivel del bono establecido en Q
+50.00. A los clientes con derecho a bono se les envía una carta en donde se les
+agradece haber excedido la cantidad establecida, junto con varios cupones de rentas
+gratuitas. 
