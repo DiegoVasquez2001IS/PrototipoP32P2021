@@ -1,0 +1,3 @@
+MAESTROS: Cliente, Tienda, Tipo Película
+DEPENDIENTES: GeneroPelicula, Pelicula, Empleado
+TRANSACCIONALES: Renta y Devolución
