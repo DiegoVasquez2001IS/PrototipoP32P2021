@@ -30,20 +30,110 @@ public class JFramePrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDesktopPane1 = new javax.swing.JDesktopPane();
+        JMenuBarContenedor = new javax.swing.JMenuBar();
+        JMenuInicio = new javax.swing.JMenu();
+        JMenuInicioAccion = new javax.swing.JMenu();
+        JMenuCerrarSesion = new javax.swing.JMenuItem();
+        JMenuCatalogo = new javax.swing.JMenu();
+        JMenuCatPrin = new javax.swing.JMenu();
+        JMenuMantCliente = new javax.swing.JMenuItem();
+        JMenuMantTienda = new javax.swing.JMenuItem();
+        JMenuMantTipoPelicula = new javax.swing.JMenuItem();
+        JMenuCatSec = new javax.swing.JMenu();
+        JMenuMantGeneroPelicula = new javax.swing.JMenuItem();
+        JMenuMantPelicula = new javax.swing.JMenuItem();
+        JMenuMantEmpleado = new javax.swing.JMenuItem();
+        JMenuProceso = new javax.swing.JMenu();
+        JMenuInforme = new javax.swing.JMenu();
+        JMenuSeguridad = new javax.swing.JMenu();
+        JMenuAyuda = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Diego Vásquez [9959 - 19 - 19543]");
+        setResizable(false);
+
+        jDesktopPane1.setBackground(new java.awt.Color(0, 80, 100));
+
+        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
+        jDesktopPane1.setLayout(jDesktopPane1Layout);
+        jDesktopPane1Layout.setHorizontalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1200, Short.MAX_VALUE)
+        );
+        jDesktopPane1Layout.setVerticalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 646, Short.MAX_VALUE)
+        );
+
+        JMenuInicio.setText("Inicio");
+
+        JMenuInicioAccion.setText("Acciones de Usuario");
+
+        JMenuCerrarSesion.setText("Cerrar Sesión");
+        JMenuInicioAccion.add(JMenuCerrarSesion);
+
+        JMenuInicio.add(JMenuInicioAccion);
+
+        JMenuBarContenedor.add(JMenuInicio);
+
+        JMenuCatalogo.setText("Catálogos");
+
+        JMenuCatPrin.setText("Principales");
+
+        JMenuMantCliente.setText("Cliente");
+        JMenuCatPrin.add(JMenuMantCliente);
+
+        JMenuMantTienda.setText("Tienda");
+        JMenuCatPrin.add(JMenuMantTienda);
+
+        JMenuMantTipoPelicula.setText("Tipo Película");
+        JMenuCatPrin.add(JMenuMantTipoPelicula);
+
+        JMenuCatalogo.add(JMenuCatPrin);
+
+        JMenuCatSec.setText("Secundarios");
+
+        JMenuMantGeneroPelicula.setText("Género Película");
+        JMenuCatSec.add(JMenuMantGeneroPelicula);
+
+        JMenuMantPelicula.setText("Película");
+        JMenuCatSec.add(JMenuMantPelicula);
+
+        JMenuMantEmpleado.setText("Empleado");
+        JMenuCatSec.add(JMenuMantEmpleado);
+
+        JMenuCatalogo.add(JMenuCatSec);
+
+        JMenuBarContenedor.add(JMenuCatalogo);
+
+        JMenuProceso.setText("Procesos");
+        JMenuBarContenedor.add(JMenuProceso);
+
+        JMenuInforme.setText("Informes");
+        JMenuBarContenedor.add(JMenuInforme);
+
+        JMenuSeguridad.setText("Seguridad");
+        JMenuBarContenedor.add(JMenuSeguridad);
+
+        JMenuAyuda.setText("Ayuda");
+        JMenuBarContenedor.add(JMenuAyuda);
+
+        setJMenuBar(JMenuBarContenedor);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1000, Short.MAX_VALUE)
+            .addComponent(jDesktopPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 650, Short.MAX_VALUE)
+            .addComponent(jDesktopPane1)
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -64,5 +154,23 @@ public class JFramePrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu JMenuAyuda;
+    private javax.swing.JMenuBar JMenuBarContenedor;
+    private javax.swing.JMenu JMenuCatPrin;
+    private javax.swing.JMenu JMenuCatSec;
+    private javax.swing.JMenu JMenuCatalogo;
+    private javax.swing.JMenuItem JMenuCerrarSesion;
+    private javax.swing.JMenu JMenuInforme;
+    private javax.swing.JMenu JMenuInicio;
+    private javax.swing.JMenu JMenuInicioAccion;
+    private javax.swing.JMenuItem JMenuMantCliente;
+    private javax.swing.JMenuItem JMenuMantEmpleado;
+    private javax.swing.JMenuItem JMenuMantGeneroPelicula;
+    private javax.swing.JMenuItem JMenuMantPelicula;
+    private javax.swing.JMenuItem JMenuMantTienda;
+    private javax.swing.JMenuItem JMenuMantTipoPelicula;
+    private javax.swing.JMenu JMenuProceso;
+    private javax.swing.JMenu JMenuSeguridad;
+    private javax.swing.JDesktopPane jDesktopPane1;
     // End of variables declaration//GEN-END:variables
 }
